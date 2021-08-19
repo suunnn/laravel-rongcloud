@@ -1,0 +1,30 @@
+{
+    "name": "suunnn/laravel-rongcloud",
+    "description": "RongCloud SDK for Laravel",
+    "autoload": {
+        "psr-4": {
+            "Suunnn\\LaravelRongcloud\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "suunnn",
+            "email": "cn.sunhaowei@gmail.com"
+        }
+    ],
+    "require": {
+        "rongcloud/php-sdk": "3.0.*",
+        "illuminate/support": "^5.1 || ^6.0 || ^7.0 || ^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Suunnn\\LaravelRongcloud\\ServiceProvider"
+            ],
+            "aliases": {
+                "RongCloud": "Suunnn\\LaravelRongcloud\\Facades\\RongCloud"
+            }
+        }
+    },
+    "license": "MIT"
+}
